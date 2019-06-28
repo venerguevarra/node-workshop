@@ -1,0 +1,25 @@
+{{!< ../../templates/defaultDeclarative}}
+
+{{#contentFor "pageStyles"}}
+<style>
+  #veggie-list {
+    color: black
+  }
+</style>
+{{/contentFor}}
+
+<h1>{{title}}</h1>
+<ul>
+    {{#each veggies}}
+    <li id="veggie-list">
+      <a href="/veggies/details/{{this.name}}">{{this.name}}</a>
+    </li>
+    {{/each}}
+</ul>
+
+
+{{#contentFor "pageScripts"}}
+<script type="text/javascript">
+alert("hello");
+</script>
+{{/contentFor}}

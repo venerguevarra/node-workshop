@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "3811a9d5-7e49-4f83-bed8-20f2f9705f18",
+		"name": "nodejs-demo-restapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quote\": \"nodejs is the best\", \n    \"author\": \"Vener Guevarra\",\n    \"year\": 2020\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"username\": \"Superman\",\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/16f1ebea-f41a-47ee-abc7-85240a0b2097",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/users/16f1ebea-f41a-47ee-abc7-85240a0b2097",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"16f1ebea-f41a-47ee-abc7-85240a0b2097"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/16f1ebea-f41a-47ee-abc7-85240a0b2097",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"vener.guevarra\",\n    \"firstName\": \"vener\",\n    \"lastName\": \"guevarra\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/users/16f1ebea-f41a-47ee-abc7-85240a0b2097",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"16f1ebea-f41a-47ee-abc7-85240a0b2097"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

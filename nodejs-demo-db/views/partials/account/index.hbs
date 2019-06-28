@@ -1,0 +1,29 @@
+{{#contentFor "pageStyles"}}
+<style>
+</style>
+{{/contentFor}}
+
+<h1>{{title}}</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>User Id</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each accounts}}
+            <tr>
+                <td>{{this.id}}
+                <td>{{this.userid}}
+                <td>{{this.email}}
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+{{#contentFor "pageScripts"}}
+<script type="text/javascript">
+</script>
+{{/contentFor}}
