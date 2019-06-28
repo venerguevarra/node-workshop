@@ -1,3 +1,4 @@
+<!--Declarative Templating-->
 {{!< ../../templates/defaultDeclarative}}
 
 {{#contentFor "pageStyles"}}
@@ -16,10 +17,15 @@
     </li>
     {{/each}}
 </ul>
+<button id="clickBtn">Click Me</button>
 
 
 {{#contentFor "pageScripts"}}
 <script type="text/javascript">
-alert("hello");
+ $(document).ready(function(){
+   $("#clickBtn").click(function(){
+     alert("Button clicked");
+   });
+ });
 </script>
 {{/contentFor}}
